@@ -112,7 +112,7 @@ When reviewing an article generated from a multi-participant input, check:
 
 ## Signer tone checklist (when the signer has a tone file)
 
-Some signers have their own tone file in `../blog-post-create/references/tones/` (today: Felipe Polo, `felipe-polo.md`). When the article is signed by one of them, **load that file and review the article against it**, on top of the general guidelines above. Where the two disagree, the tone file wins, following its own precedence section. In particular, do not ask a signer with a business voice to make the piece more technical.
+Some signers have their own tone file in `../blog-post-create/references/tones/` (today: Felipe Polo, `felipe-polo.md`, and Matteo di Paolantonio, `matteo-di-paolantonio.md`; for Matteo, run section 8 of his file as the checklist). When the article is signed by one of them, **load that file and review the article against it**, on top of the general guidelines above. Where the two disagree, the tone file wins, following its own precedence section. In particular, do not ask a signer with a business voice to make the piece more technical.
 
 For Felipe Polo, check at least:
 

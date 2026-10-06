@@ -52,6 +52,7 @@ Maintain the same tone as the original:
 If the signer has a tone file, load it again for the translation, so the English version keeps that voice and its English-specific rules:
 
 - Felipe Polo: [../blog-post-create/references/tones/felipe-polo.md](../blog-post-create/references/tones/felipe-polo.md)
+- Matteo di Paolantonio: [../blog-post-create/references/tones/matteo-di-paolantonio.md](../blog-post-create/references/tones/matteo-di-paolantonio.md)
 
 ### Technical terms
 Most technical terms are already in English in the Spanish original (e.g., *framework*, *pipeline*, *deployment*, *token*, *clean code*). Keep them as-is — they are the standard English terms and require no translation. Do not over-translate industry-standard terminology.
