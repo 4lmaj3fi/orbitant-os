@@ -8,7 +8,7 @@ description: |
   or editorial guidelines. Also trigger when reviewing blog content for consistency,
   checking if text "sounds like Orbitant", or when creating/editing marketing content
   — even if they don't explicitly mention tone or voice.
-version: "1.1.1"
+version: "1.2.0"
 license: MIT
 metadata:
   author: orbitant
