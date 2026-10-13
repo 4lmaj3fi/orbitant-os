@@ -135,6 +135,7 @@ Good technical writing acknowledges what did not work, what could be better, and
 - **Not a brochure**: We do not write to sell Orbitant. We write to share what we know. If the content is genuinely useful, it speaks for itself.
 - **Not neutral**: We have opinions. We explain why we prefer certain approaches, tools, or patterns. We do not hedge every sentence to avoid taking a position.
 - **Not formal**: We do not use "usted", corporate passive voice, or expressions like "cabe destacar que", "en el contexto actual", "es de vital importancia". We write like we talk — clearly and directly.
+- **Not translated**: When the material is in another language, usually English notes, we write from its ideas, not from its sentences. No sentence should read as a sentence of the material put into Spanish. The calques this guide lists are examples, not the boundary: any phrase a Spanish editor would not write (English word order, "lo que importa más", a passive with nobody acting like "pasaron a descubrirse") is rewritten the way a native writer would say it. Ordinary Spanish editing applies without being listed: no word repeated within a sentence unless it is the term under discussion, and no sentence that says nothing ("la diferencia entre ambas cosas es la diferencia").
 - **Not theoretical**: We do not write about how things should work in an ideal world. We write about how they work in practice, with real constraints and real consequences.
 
 ---
