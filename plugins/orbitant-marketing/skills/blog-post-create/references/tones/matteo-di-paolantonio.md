@@ -8,16 +8,7 @@ Matteo signs three kinds of content:
 - **The future product series.**
 - **Anything about delivery and the technical side**: architecture, platform, AI in production, engineering practices.
 
-Built from Matteo's own material:
-
-- His blog post *Apogee: cómo construimos nuestro bot de Slack open source para dar karma* (Spanish original).
-- His Manfred article *De técnico a founder: cómo vendimos un "SaaS" que en realidad era un PDF*, using his own V1 draft before editing.
-- His LinkedIn posts: the 12-Factor series, Apogee, the prompting kata, Passwd, SBI, ICE, the performance reviews, *AI first mindset* and the NodeJS Madrid meetup announcement.
-- His Slack messages, including the feedback he gives on content drafts.
-- The transcripts of his Knowledge Sharing sessions (*Neural Networks*, *How we built Apogee*, *Leveraging AI for front-end development*).
-- The FDE interviews he conducted.
-
-The posts produced by the content pipeline (the AI agents glossary, the second brain article) were **not** used as voice evidence, because they were AI-drafted and then edited. Quotes taken from spoken transcripts have been lightly cleaned of transcription errors.
+Built from Matteo's own writing and talks. Drafts produced by the content pipeline were not used as voice evidence, because they were AI-drafted and then edited.
 
 The instructions are in English. The Orbitant blog is published in two languages, Spanish and English. Every post is written in Spanish first and then translated into English (see `blog-post-translate`), which is why the examples are in Spanish. This profile applies to both versions. Use it when drafting the Spanish original, and load it again when translating so the English version keeps Matteo's voice (trade-off reasoning, honest mistakes, rules of thumb, the optional film reference) and doesn't slide into a generic register.
 
@@ -54,12 +45,12 @@ His time as technical co-founder of Sherpa is one source of cases among several 
   - *"si procesas datos de 10 usuarios distintos a una media de 30 segundos cada uno… saltas el timeout."*
   - *"I used to spend 2+ hours preparing each Performance Review… Now it's 30 minutes."*
   - A per-user monthly price comparison of four password managers.
-- He makes hard ideas small before making them big: *"la red no es nada más nada menos que una función."*
+- He makes hard ideas small before making them big: *"una red neuronal no es nada más nada menos que una función."*
 
 ### 2.3 He tells what went wrong, on purpose
 
 - He opens decisions with their consequence already visible. In the Manfred article he lists each stack choice with a *spoiler* of how it aged ("spoiler: serverless no se lleva bien con procesos pesados de ingesta", "spoiler: esta vez sí acertamos"), then comes back to each one later.
-- He admits his limits in the open: *"i'm not a code guru"*, *"I feel that I'm maybe too optimistic about the actual quality of the code"*, *"pido disculpas de manera pública por haber decidido en su día tirar con Vercel."* In the Apogee post: *"Este MVP inicial se desarrolló durante una sesión de programación en solitario, en pareja con la IA, en una fría noche de invierno, y sin duda deja margen de evolución."*
+- He admits his limits in the open: *"i'm not a code guru"*, *"I feel that I'm maybe too optimistic about the actual quality of the code"*. In the Apogee post: *"Este MVP inicial se desarrolló durante una sesión de programación en solitario, en pareja con la IA, en una fría noche de invierno, y sin duda deja margen de evolución."*
 - The mistake is the evidence. Admitting it is what makes the rest credible.
 
 ### 2.4 He closes with a testable rule of thumb
@@ -83,7 +74,7 @@ His time as technical co-founder of Sherpa is one source of cases among several 
 
 ### 2.7 Anti-hype, demystifying
 
-- He resists the magical framing of AI and new tools: *"a mí eso de Gandalfear no me encaja del todo. Vamos a entender un poco qué es eso."*
+- He resists the magical framing of AI and new tools: he explains what the thing is before judging what it can do.
 - He distinguishes prototyping from production: *"Prototipar y produccionar determinadas soluciones son cosas muy distintas"* (use *poner en producción*, see section 7.2). Wow-effect PoCs you throw away are a cost, not a win.
 - He shares what he read with reservations: *"no tengo tan claro que el framework sea ni correcto ni definitivo, pero los core principles me parecen on point."*
 
@@ -242,7 +233,7 @@ The reviewer also runs section 8 of this profile as an extra checklist and repor
 | **Extract the author's voice from the input** vs. input that is AI-drafted or written by other engineers | The input supplies facts; this profile supplies the voice. Never add facts, numbers, cases or mistakes that aren't in the input. Matteo rejects *"claims editoriales que el original no respalda"* and unsupported absolutes ("siempre", "nunca"). |
 | The anti-slop **escape clause** in `SKILL.md` (skip a flagged pattern when it "carries the author's real voice") | **Does not apply to Matteo's posts.** Every ban is absolute (see "No AI slop, no exceptions" above). Finding a pattern in his LinkedIn posts, Slack messages or transcripts is a reason to remove it from the draft, never a reason to keep it. |
 | **English technical terms** (italics required by `blog-post-review`) vs. section 7.2 | Both apply: use the term of art only when there's no established Spanish word, and put it in italics (*pipeline*, *timeout*, *runway*). |
-| **External links**: `blog-post-create` asks for 1–2, `blog-post-review` for 3–5 | Not a voice question. `blog-post-create` decides when drafting; the reviewer doesn't flag 1–2 links as a defect. (The two skills should be aligned; see the open points.) |
+| **External links**: `blog-post-create` asks for 1–2, `blog-post-review` for 3–5 | Not a voice question. `blog-post-create` decides when drafting; the reviewer doesn't flag 1–2 links as a defect. |
 | Series continuity | Check *Pipeline editorial · Software Economics* (or the relevant Content Progress subpillar) for order, previous instalments and what was promised. Don't guess. Check that the instalments don't contradict each other; Matteo reads series end to end. |
 
 ---
