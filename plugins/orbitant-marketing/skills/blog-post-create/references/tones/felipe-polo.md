@@ -40,6 +40,7 @@ If a paragraph would read the same in an engineering changelog or an ADR, it isn
 ### 2.4 He defines concepts by contrast and turns them into principles
 
 - He explains an idea by setting it against its neighbours: tool, then assistant, then employee, then employent; technical debt vs investment; spent vs invested.
+- Each side of the contrast is stated affirmatively, in its own sentence or clause: what the one is, then what the other is. Never negate one framing to assert the next ("no es X, es Y", "X, no Y"): that move is the fatal rule in the conflicts table below, and contrast is where it creeps in.
 - He likes a short set of principles or design commitments (the four properties of an employent, the ten operating principles). Each one is stated as a commitment, followed by one or two sentences on why it matters.
 
 ### 2.5 He thinks in context and in the long term
@@ -69,6 +70,18 @@ If a paragraph would read the same in an engineering changelog or an ADR, it isn
 - A reframe is the floor. The pieces that land go one step further: they name a practice his audience recognises and say plainly why it is wrong, drawing on what he has seen rather than on a wish to be different.
 - An article that could have been written by anyone else in the industry will not be remembered. Before delivering, find the one line a competent reader could argue with.
 - The disagreement stays calm and specific. No hype, no outrage, no strawman.
+
+---
+
+## 2b. Before drafting: what only Felipe can supply
+
+A Felipe post stands on three things that engineering material (sprint notes, ADRs, a Content Progress card) almost never carries. Check the input for each before writing:
+
+1. **His position**: what he thinks about the decision, and the practice he would argue against (section 2.9).
+2. **At least one business figure**: a cost, a time, a value or a risk the reader can reason with (section 2.1).
+3. **Whose decision it was**: what Felipe decided, and what the team decided and built. Only the first goes in his first person.
+
+If any is missing, do not paper over it with generic first-person lines or invented numbers. **Ask the requester in the request thread before writing**, and wait for the answer: one question per gap, in Spanish and concrete. Write with what they answer. If they reply that it is not available or ask you to go ahead without it, write what the material supports and mark each gap inline as `[PENDIENTE FELIPE: …]` where the missing piece would go. Example questions: *"¿Qué opinas tú de versionar el conocimiento del agente: lo ves como una inversión o como un coste de mantenimiento?"*, *"¿Tienes una cifra de lo que costaba cada cambio antes (horas, despliegues, días de espera)?"*, *"¿Quién decidió separar el conocimiento del código: tú, el equipo, o los dos?"*
 
 ---
 
@@ -128,7 +141,7 @@ Levels 2 and 3 agree more often than they collide. The bans on "No es X, es Y" a
 | Felipe opens with questions ("¿Son necesarios? ¿Hasta qué punto?", "¿gastado o invertido?") vs. **no rhetorical questions** | The ban wins. Keep his reframing move but state the tension declaratively: *"Pocas veces nos preguntamos si ese refactor se paga solo."* |
 | His "En Orbitant…" openers vs. the **"en Orbitant + verb" ban** | The ban wins. Use the trailing clause form from `SKILL.md`. |
 | Phrases like "No son eslóganes… son la columna vertebral" vs. **"No es X, es Y"** and **foundation metaphors** | The bans win. State the affirmative claim directly. |
-| His short principle-like lines vs. the **pseudo-profound closer** ban | Allowed at most once per article, only if the line is a decision rule the reader can apply ("Mide el coste de cada capacidad siguiente, no el de la primera"). It may stand as the final sentence when it carries a real instruction (see the closing row below). An aphorism with no instruction in it stays banned anywhere in the piece. |
+| His short principle-like lines vs. the **pseudo-profound closer** ban | Allowed at most once per article, only if the line is a decision rule the reader can apply ("Mide cuánto cuesta la siguiente capacidad antes de celebrar la primera"). It may stand as the final sentence when it carries a real instruction (see the closing row below). An aphorism with no instruction in it stays banned anywhere in the piece. |
 | **Em dash** permitted as a two-sided inciso in `tone/SKILL.md` vs. Felipe's rule, **no em dashes, ever** (section 7.1) | Felipe's rule wins on anything he signs. The Orbitant rule permits the inciso and never requires it, so dropping it satisfies both. Use a comma, a colon, a semicolon, parentheses or a full stop. |
 | **Bold in every paragraph** (`SKILL.md`) vs. Felipe's rule, **bold sparingly, 1 or 2 moments per section** (section 7.1) | The house rule wins, **on the Orbitant blog only**. Bolding every paragraph is a scannability requirement of the publication surface rather than a voice choice. On Felipe's own channels (LinkedIn, newsletter, essays) his sparing-bold rule governs and this profile does not load at all. |
 | **900-word floor** and 300 words per H2 vs. Felipe's editing rule, **cut 20 to 30 per cent from every draft** (section 7.1) | Both apply, in this order: write, cut 20 to 30 per cent, then measure. If the cut draft lands under 900 words the material is thin, so add a second use case, another quantified trade-off, or the context where the decision would fail. Padding to reach the floor is banned by `SKILL.md` itself. |
@@ -192,6 +205,7 @@ The register is calm and measured, and that leaves more room than it sounds like
 
 Run this after the anti-slop pass in `SKILL.md`:
 
+0. Did the input carry Felipe's position, a business figure and whose decision it was (section 2b)? If not, were the questions asked in the request thread and answered before drafting? Any gap the requester could not fill must appear inline as `[PENDIENTE FELIPE: …]`.
 1. Can a non-technical CEO follow every H2 and say what decision it supports?
 2. Does each H2 contain no more than two technical specifics, and is each one translated into a business consequence?
 3. Is there at least one quantified trade-off (cost, time, value, risk) the reader can reason with?

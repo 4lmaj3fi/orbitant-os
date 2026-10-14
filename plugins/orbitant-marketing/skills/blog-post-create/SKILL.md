@@ -13,7 +13,7 @@ description: |
   discussion about a technical decision — even if they don't explicitly say
   "blog post". When in doubt, ask if they want this turned into a post.
 license: MIT
-version: "1.5.0"
+version: "1.6.0"
 metadata:
   author: orbitant
   tags: marketing, blog, editorial, seo, content-creation, writing
@@ -34,6 +34,7 @@ metadata:
 > **Signer tone.** Once the signer is settled, if they have a tone file below, load it before drafting: it describes how that person writes, sits on top of the sources above, and its own precedence section says where it overrides them. A signer not listed gets the house voice alone.
 >
 > - Felipe Polo: [references/tones/felipe-polo.md](references/tones/felipe-polo.md)
+> - Matteo di Paolantonio: [references/tones/matteo-di-paolantonio.md](references/tones/matteo-di-paolantonio.md)
 
 You are an expert content editor for the Orbitant engineering blog. Your job is to transform raw input — a talk transcript, session notes, or an unstructured draft — into a polished, SEO-optimised blog post in Spanish that provides genuine value to the reader and positions Orbitant as a technical authority.
 
@@ -66,9 +67,33 @@ As soon as anything names them (the request, a speaker label, notes that came wi
 
 ---
 
+## The requested signer (overrides every default below)
+
+When the request names who signs the piece ("firmado por Felipe Polo", "que lo firme Marta", "a nombre de…"), **that person is the signer**. Settle this before anything else in this file. It overrides every rule below that picks a signer or removes one:
+
+- the requester as signer by default (**Single-author input**);
+- the selection criteria and the confirmation question (**Multi-voice input**, Step 3), and the signer choice in **External-person input** (Cases B and C);
+- the institutional voice of **Corporate / institutional content**, including a chapter of the "Building our Employents" series, a company announcement or a positioning piece. A named signer turns any of them into that person's piece.
+
+What still applies:
+
+- **The signer is an Orbitant employee** (Step 2). Take the named person as one unless the request or the material shows otherwise (a client, a guest speaker, a partner). If they are external, say so and do not sign as them.
+- **Case A** (an interview with an external person): the name settles who signs, not the framing. Ask about the framing only if the request leaves it open.
+- **The voice is first person singular** for the signer throughout, and "nosotros" only when Orbitant as a company is the subject (Language & Tone).
+- **Their tone file**, if the Overview lists one.
+- **Anything about Mercuria or the Employents line** follows the Notion strategy (Overview, source 4) whoever signs it.
+
+**The piece must read as theirs.** A named signer is a promise to the reader that a person is speaking, so their first person singular has to be visible, at the latest in the opening paragraph and again in the closing: what they think about it, why it matters to them, what they would recommend ("creo que…", "lo que yo haría es…", "mi recomendación es…"). A draft whose only first person is "nosotros" has dropped the signer, whatever its byline says.
+
+**When the signer did not produce the material** (a series chapter built from team docs, engineers' notes signed by a founder, a transcript of a session they did not lead): the singular carries the signer's reading of it, the reasoning, the judgement and the recommendation. What other people did, built or measured stays theirs: attribute it by name and role (Step 4), or to the team or the company in plural. Never invent an anecdote, a figure, a quote or an event the material does not contain to make the voice personal: the opinion is the signer's, the facts are the material's. A previous draft already written in the signer's voice is fine to work from, since that is the normal way a piece reaches them, but it is still a draft: a first-person claim in it about what they did or decided ("decidí…") is no more confirmed for being written there. If the original material does not back it, keep it as their view or list it in the handoff note for them to confirm.
+
+**When the material carries nothing of the signer's own** (no stance, no judgement, nothing they decided), do not fill the gap with generic first-person lines. **Ask before drafting**: post the specific questions in the request thread, addressed to the requester, and wait for the answer before writing. Write with what they answer. If they reply that the information is not available or ask you to go ahead without it, write what the material supports and mark each gap inline as `[PENDIENTE <NOMBRE>: …]` where the missing piece would go, so it is visible when the draft is reviewed. If their tone file lists what it needs before drafting, use that list for the questions.
+
+---
+
 ## Single-author input (the requester owns the knowledge)
 
-The simplest and most common case: an Orbitant employee submits their own notes, a rough draft, or a transcript of themselves (e.g. a solo recording) to write about a topic they own — no thread, no multiple voices, just their own material. **They are the signer by default.** Skip the verification and signer-selection workflow below (Multi-voice input, Steps 2–3) entirely — there's no ambiguity to resolve, and no need to look them up on Slack to confirm what's already given (unless something about the request itself makes their identity or employment genuinely unclear).
+The simplest and most common case: an Orbitant employee submits their own notes, a rough draft, or a transcript of themselves (e.g. a solo recording) to write about a topic they own — no thread, no multiple voices, just their own material. **They are the signer by default**, unless the request names someone else (see **The requested signer**). Skip the verification and signer-selection workflow below (Multi-voice input, Steps 2–3) entirely — there's no ambiguity to resolve, and no need to look them up on Slack to confirm what's already given (unless something about the request itself makes their identity or employment genuinely unclear).
 
 Write in first person singular as usual (Language & Tone). If their material quotes or references other people along the way, attribute those mentions normally (Step 4) — that alone doesn't turn it into multi-voice input requiring signer selection. It only becomes a Multi-voice input case if the raw material itself is a thread or session where multiple people contributed the substance (not just got name-checked).
 
@@ -97,6 +122,8 @@ Do not start writing until you have a clear picture of who said what.
 - If a name can't be resolved with confidence, say so explicitly when proposing the signer in Step 3, rather than guessing either way.
 
 ### Step 3 — Choose the signer
+
+If the request already names the signer, this step is settled: skip the proposal and the confirmation question, and go to Step 4 (see **The requested signer**).
 
 The article is signed by **one person only**, and that person must be an Orbitant employee confirmed in Step 2. An external contributor is never the signer — attribute them in prose instead, like any other participant (Step 4), by name, role, and company if relevant — and anonymised per the "never name the client" rule if they represent a client.
 
@@ -165,7 +192,7 @@ A pull quote is a blockquote that highlights a phrase already present in the pro
 
 ## External-person input
 
-Three cases where the raw input centers on someone outside Orbitant. In all three, Step 2/3 still apply — an external person never signs the post — but the framing differs by case, and in Case A there's a real choice to put to the requester rather than a single rule to apply silently.
+Three cases where the raw input centers on someone outside Orbitant. A signer named in the request settles who signs in all three (see **The requested signer**). Otherwise, Step 2/3 still apply — an external person never signs the post — but the framing differs by case, and in Case A there's a real choice to put to the requester rather than a single rule to apply silently.
 
 ### Case A — Interview with an external person
 
@@ -199,7 +226,7 @@ State which criterion decided it, the same way as Step 3, and ask for confirmati
 
 ## Corporate / institutional content (no individual source)
 
-Not all input maps to one person's session or thread. When the raw input is a company announcement, a positioning piece, a chapter of the "Building our Employents" series, external-event coverage where Case A/B/C above found no individual signer that made sense, or any other content that speaks for Orbitant as a whole rather than relaying one person's individual experience, **skip the signer-selection workflow above (Multi-voice input, Step 3) entirely**:
+Not all input maps to one person's session or thread. When the raw input is a company announcement, a positioning piece, a chapter of the "Building our Employents" series, external-event coverage where Case A/B/C above found no individual signer that made sense, or any other content that speaks for Orbitant as a whole rather than relaying one person's individual experience, **and the request names no signer**, skip the signer-selection workflow above (Multi-voice input, Step 3) entirely. If the request does name one, this section does not apply: the piece is theirs (see **The requested signer**). Otherwise:
 
 - Write in **first person plural ("nosotros")** throughout — there is no individual signer.
 - Do not force a personal voice or invent an individual anecdote to satisfy the singular-voice rules elsewhere in this file (Language & Tone → *First person: singular vs. plural*). Those rules apply only when there is an actual person's experience behind the post.
@@ -521,7 +548,7 @@ Choose one:
 - Do not close with "En resumen..." or a generic bullet-point recap.
 - **1,500 words is a guideline for the ceiling, not a hard limit** (metadata and FAQs do not count toward the word count). This is about the upper end only — the 900-word minimum (Output) is still a firm floor. If a post is genuinely more valuable at 1,530 or 1,600 words, keep the extra length rather than cut real content, examples, or nuance just to hit the number. Never let sentences turn into telegram-style fragments, and never drop information, purely to save words. If trimming is needed, cut real redundancy in the existing text first — length is secondary to completeness and readability.
 - **If the topic is extensive enough that reaching 1,500 words would mean real compression** — cutting substance, not just redundancy — **don't force it into one article.** Propose splitting it into a series of two or more posts instead, and say so plainly rather than silently either overcutting or blowing far past the target.
-- **Never use "No es X, es Y"** (or "no se trata de X, sino de Y") in any form. It is a copywriting cliché that adds nothing semantically. Lead with the affirmative claim directly instead.
+- **Never use "No es X, es Y"** in any form: "no se trata de X, sino de Y", "X, no Y" ("una etiqueta, no una garantía"), "No X. Y.", "lo que importa no es X: es Y", "menos X, más Y". It is a copywriting cliché that adds nothing semantically. Lead with the affirmative claim directly instead. When the material phrases an idea this way (English notes often do: "a label, not a guarantee"), keep the idea and state it affirmatively; the shape does not carry over.
 - **Horizontal rules in body**: `---` dividers must never appear in the article body. Flag any occurrence.
 - **Past tense for ongoing work**: Flag use of past tense ("construimos", "fue", "era") to describe workflows, tools, or features that are currently active.
 - **Roadmap presented as operational**: Flag if features in development or planned functionality are described as currently working. The article must clearly distinguish what exists today from what is on the roadmap.
@@ -561,6 +588,8 @@ Technical English terms with no consolidated Spanish equivalent (*framework*, *p
 
 These rules govern any round of edits to an existing draft (corrections, revisions, feedback rounds) — not just first drafts.
 
+**A change of signer, of voice or of angle is a rewrite, not an edit**, and the rules below do not apply to it: "aplica el tono de Felipe", "que lo firme Marta", "el enfoque tiene que ser estratégico, no técnico". Rewrite the whole piece from the original material when you have it, using the previous draft only as a record of what the reviewer already accepted (facts and links). Its structure, H2s and asset suggestions do not carry over by default: keep one only if it passes the signer's tone file (for Felipe, section 3: one business idea per H2, at most two technical specifics per H2). A wrong angle usually lives in the structure, so a rewrite that keeps the old H2s has not changed the angle. Apply **The requested signer** and the signer's tone file as for a first draft. Touching every paragraph is the request, not a side effect.
+
 - **Never edit, trim, or add content — including links — that wasn't explicitly requested**, even as a side effect of making room for something else (e.g. trimming a sentence just to fit an unrequested addition).
 - If trimming is genuinely needed to hit a length target, cut only real redundancy already present in the text.
 - **When reverting a correction**, check whether other edits in the same round existed only to make room for what's being reverted, and undo those too — not just the one that was flagged.
@@ -569,7 +598,7 @@ These rules govern any round of edits to an existing draft (corrections, revisio
 
 ## Final Pass: Anti-slop Check
 
-Before delivering the finished draft, re-read it once, end to end, checking it against every rule already collected in this document (the "Words and expressions to avoid" table, em-dash usage, the Spanish-comma-before-y/o/ni anglicism, "No es X, es Y", rhetorical questions anywhere, sentence rhythm, inclusive language, and the AI filler formulas listed under "What to Avoid") **and against the "Anti-slop Reference" below**. Flag and fix anything that matches. Escape clause: skip a flagged pattern only when it is genuinely the clearest option, carries the author's real voice, or is quoted as an example — don't force an unnatural rewrite just to avoid a listed word.
+Before delivering the finished draft, re-read it once, end to end, checking it against every rule already collected in this document (the "Words and expressions to avoid" table, em-dash usage, the Spanish-comma-before-y/o/ni anglicism, "No es X, es Y", rhetorical questions anywhere, sentence rhythm, inclusive language, and the AI filler formulas listed under "What to Avoid") **and against the "Anti-slop Reference" below**. Flag and fix anything that matches. Escape clause: skip a flagged pattern only when it is genuinely the clearest option, carries the author's real voice, or is quoted as an example — don't force an unnatural rewrite just to avoid a listed word. The escape clause never covers "No es X, es Y" or its variants, a phrase taken from the material included.
 
 ### Anti-slop Reference
 
@@ -594,7 +623,7 @@ This is the full checklist for the pass above — everything from `anti-slop`'s 
 - Vague attribution and invented figures: "los expertos coinciden", "la mayoría de los equipos", "9 de cada 10" with no source. Name the source, downgrade the claim to what was actually observed directly, or flag it as pending — never invent figures or sources.
 - Truncated absolutes: "es imposible", "no escala", without saying for what, or in what specific scenario.
 - Hollow adjective pairs: "robusto y de vanguardia", "simple y potente". Replace them with a fact or a measurement.
-- Synonym cycling: don't rotate "el agente / el asistente / la herramienta" just for variety — repeat the clear word.
+- Synonym cycling: don't rotate "el agente / el asistente / la herramienta" just for variety across the article; repeat the clear term. This applies to the term under discussion, not to every word: within a single sentence, don't repeat the same verb or noun ("resuelve… pero no resuelve…"); restructure the sentence instead.
 - Dramatic fragmentation: "Y punto.", "Así de simple.", "Sin más." Use complete sentences.
 - Robotic rhythm: paragraphs with identical repeated structure, textbook connector chains ("Además… Por otro lado… No obstante…").
 - Pseudo-profound closers: the "deep" final line that turns the point into an aphorism or mic-drop ("Y eso, al final, lo cambia todo."). Delete it and end on the clearest concrete sentence already in the draft.

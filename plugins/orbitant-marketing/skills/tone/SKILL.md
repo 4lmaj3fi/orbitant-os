@@ -8,7 +8,7 @@ description: |
   or editorial guidelines. Also trigger when reviewing blog content for consistency,
   checking if text "sounds like Orbitant", or when creating/editing marketing content
   — even if they don't explicitly mention tone or voice.
-version: "1.1.0"
+version: "1.2.0"
 license: MIT
 metadata:
   author: orbitant
@@ -44,7 +44,7 @@ Many Orbitant articles originate from group conversations — a Slack thread tha
 
 **The rule**: one article, one signer, first person singular.
 
-The signer is the person who initiated the conversation or the most senior participant. Everyone else's contribution lives in the article as prose attribution — not as a series of isolated quotes.
+The signer is the person the request names, when it names one. Otherwise the channel skill says how to choose (for the blog, `blog-post-create` Step 3), and where it says nothing, the person who initiated the conversation or the most senior participant. Everyone else's contribution lives in the article as prose attribution — not as a series of isolated quotes.
 
 The prose pattern is: context sentence → attribution phrase (name + functional role) → the person's actual point, paraphrased or quoted depending on whether the phrasing itself is what matters.
 
@@ -135,6 +135,7 @@ Good technical writing acknowledges what did not work, what could be better, and
 - **Not a brochure**: We do not write to sell Orbitant. We write to share what we know. If the content is genuinely useful, it speaks for itself.
 - **Not neutral**: We have opinions. We explain why we prefer certain approaches, tools, or patterns. We do not hedge every sentence to avoid taking a position.
 - **Not formal**: We do not use "usted", corporate passive voice, or expressions like "cabe destacar que", "en el contexto actual", "es de vital importancia". We write like we talk — clearly and directly.
+- **Not translated**: When the material is in another language, usually English notes, we write from its ideas, not from its sentences. No sentence should read as a sentence of the material put into Spanish. The calques this guide lists are examples, not the boundary: any phrase a Spanish editor would not write (English word order, "lo que importa más", a passive with nobody acting like "pasaron a descubrirse") is rewritten the way a native writer would say it. Ordinary Spanish editing applies without being listed: no word repeated within a sentence unless it is the term under discussion, and no sentence that says nothing ("la diferencia entre ambas cosas es la diferencia").
 - **Not theoretical**: We do not write about how things should work in an ideal world. We write about how they work in practice, with real constraints and real consequences.
 
 ---
