@@ -109,7 +109,7 @@ Automated drafts built from sprint notes, ADRs or Slack threads tend to come out
 
 **Felipe:**
 
-> Si un agente escribe en nombre de tu marca, tienes que poder contestar a una pregunta muy simple: con qué instrucciones trabajaba el día que generó ese texto. **Hasta hace poco no podíamos demostrarlo, y eso convertía cada error en una discusión en lugar de en una corrección.** Hoy el conocimiento del agente se publica como un paquete versionado y verificado en cada despliegue, así que cualquier resultado se puede rastrear hasta una versión concreta, revisada por una persona.
+> Si un agente escribe en nombre de tu marca, tienes que poder contestar a una pregunta muy simple: con qué instrucciones trabajaba el día que generó ese texto. Hasta hace poco no podíamos demostrarlo, y eso convertía **cada error en una discusión**, cuando debería ser una corrección. Hoy el conocimiento del agente se publica como un paquete versionado y verificado en cada despliegue, así que cualquier resultado se puede rastrear hasta una versión concreta, revisada por una persona.
 
 **Too technical (not Felipe):**
 
@@ -117,7 +117,7 @@ Automated drafts built from sprint notes, ADRs or Slack threads tend to come out
 
 **Felipe:**
 
-> **La decisión que más valor nos ha devuelto fue separar lo que el agente sabe del código que lo ejecuta.** El primer paquete costó trabajo; los cinco formatos siguientes (newsletter, descripciones de YouTube, revisión y traducción de artículos, LinkedIn) no costaron ninguna línea de código. Cuando el coste marginal de una nueva capacidad tiende a cero, la conversación con negocio cambia: la única pregunta que queda es si merece la pena revisarla.
+> La decisión que más valor nos ha devuelto fue **separar lo que el agente sabe del código** que lo ejecuta. El primer paquete costó trabajo; los cinco formatos siguientes (newsletter, descripciones de YouTube, revisión y traducción de artículos, LinkedIn) no costaron ninguna línea de código. Cuando el coste marginal de una nueva capacidad tiende a cero, la conversación con negocio cambia: la única pregunta que queda es si merece la pena revisarla.
 
 ---
 
