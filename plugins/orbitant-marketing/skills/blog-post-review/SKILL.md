@@ -8,7 +8,7 @@ description: |
   wants editorial feedback on a draft, needs SEO analysis for an article, or requests
   writing improvements for the Orbitant blog — even if they don't explicitly mention "review".
 license: MIT
-version: "1.2.1"
+version: "1.2.2"
 metadata:
   author: orbitant
   tags: marketing, blog, editorial, seo, content-review, writing
@@ -116,7 +116,7 @@ Some signers have their own tone file in `../blog-post-create/references/tones/`
 
 For Felipe Polo, check at least:
 
-- [ ] **One business idea per H2**: each H2 title and its bolded sentence state a business idea (cost, risk, value, options, speed). Flag any H2 built around a mechanism (a hash, a PR, an ADR, a lockfile).
+- [ ] **One business idea per H2**: each H2 title and its bolded phrase state a business idea (cost, risk, value, options, speed). Flag any H2 built around a mechanism (a hash, a PR, an ADR, a lockfile).
 - [ ] **At most two technical specifics per H2**, each one translated into a business consequence in the same or the next sentence. Flag the H2 and list its specifics if it has more.
 - [ ] **No negate-then-assert**: flag every sentence that negates one framing and then asserts another ("no es X, es Y", "la diferencia no está en X, sino en Y", "lo primero no es X: es Y"). Felipe treats one occurrence as invalidating the draft.
 - [ ] **No unbacked first-person decisions**: flag every "decidí / tomé la decisión / exijo" that the source material does not attribute to Felipe. What the team did or decided stays in plural or attributed by name.
