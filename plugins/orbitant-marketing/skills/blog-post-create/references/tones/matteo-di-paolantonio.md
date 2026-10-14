@@ -129,7 +129,7 @@ Example questions:
 
 Felipe's profile caps technical specifics. Matteo's problem is the opposite. His raw material is dense with mechanism, and automated drafts either keep all of it (an engineering changelog) or strip it out and keep the slogan (a Felipe post with the wrong signature). Apply these rules:
 
-1. **Each H2 is built around one trade-off or consequence, and the mechanism serves it.** The title and the bolded sentence state the consequence (cost, risk, speed, value, what it enabled). The body can go into how it works.
+1. **Each H2 is built around one trade-off or consequence, and the mechanism serves it.** The title and the bolded phrase state the consequence (cost, risk, speed, value, what it enabled). The body can go into how it works.
 2. **Mechanisms are welcome, but each one must pay rent.** There is no fixed cap. Every technical specific (a version, a framework, a timeout, a pattern, a command) must be followed, in the same or the next sentence, by what it cost, what it risked or what it allowed. A specific with no consequence attached gets cut.
 3. **At least one number per article that the reader can redo.** Time, money, volume, limits, before and after. Matteo's credibility comes from arithmetic, not adjectives.
 4. **At most one code snippet per H2**, and only when it is the clearest proof (like `waitUntil` separating the HTTP response from the processing in the Apogee post). Explain it in one sentence of plain language.
