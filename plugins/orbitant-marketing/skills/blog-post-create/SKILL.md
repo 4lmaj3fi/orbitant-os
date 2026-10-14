@@ -83,7 +83,7 @@ What still applies:
 - **Their tone file**, if the Overview lists one.
 - **Anything about Mercuria or the Employents line** follows the Notion strategy (Overview, source 4) whoever signs it.
 
-**The piece must read as theirs.** A named signer is a promise to the reader that a person is speaking, so their first person singular has to be visible, at the latest in the opening paragraph and again in the closing: what they think about it, why it matters to them, what they would recommend ("creo que…", "lo que más me importa de esto…", "mi recomendación es…"). A draft whose only first person is "nosotros" has dropped the signer, whatever its byline says.
+**The piece must read as theirs.** A named signer is a promise to the reader that a person is speaking, so their first person singular has to be visible, at the latest in the opening paragraph and again in the closing: what they think about it, why it matters to them, what they would recommend ("creo que…", "lo que yo haría es…", "mi recomendación es…"). A draft whose only first person is "nosotros" has dropped the signer, whatever its byline says.
 
 **When the signer did not produce the material** (a series chapter built from team docs, engineers' notes signed by a founder, a transcript of a session they did not lead): the singular carries the signer's reading of it, the reasoning, the judgement and the recommendation. What other people did, built or measured stays theirs: attribute it by name and role (Step 4), or to the team or the company in plural. Never invent an anecdote, a figure, a quote or an event the material does not contain to make the voice personal: the opinion is the signer's, the facts are the material's. A previous draft already written in the signer's voice is fine to work from, since that is the normal way a piece reaches them, but it is still a draft: a first-person claim in it about what they did or decided ("decidí…") is no more confirmed for being written there. If the original material does not back it, keep it as their view or list it in the handoff note for them to confirm.
 
@@ -623,7 +623,7 @@ This is the full checklist for the pass above — everything from `anti-slop`'s 
 - Vague attribution and invented figures: "los expertos coinciden", "la mayoría de los equipos", "9 de cada 10" with no source. Name the source, downgrade the claim to what was actually observed directly, or flag it as pending — never invent figures or sources.
 - Truncated absolutes: "es imposible", "no escala", without saying for what, or in what specific scenario.
 - Hollow adjective pairs: "robusto y de vanguardia", "simple y potente". Replace them with a fact or a measurement.
-- Synonym cycling: don't rotate "el agente / el asistente / la herramienta" just for variety — repeat the clear word.
+- Synonym cycling: don't rotate "el agente / el asistente / la herramienta" just for variety across the article; repeat the clear term. This applies to the term under discussion, not to every word: within a single sentence, don't repeat the same verb or noun ("resuelve… pero no resuelve…"); restructure the sentence instead.
 - Dramatic fragmentation: "Y punto.", "Así de simple.", "Sin más." Use complete sentences.
 - Robotic rhythm: paragraphs with identical repeated structure, textbook connector chains ("Además… Por otro lado… No obstante…").
 - Pseudo-profound closers: the "deep" final line that turns the point into an aphorism or mic-drop ("Y eso, al final, lo cambia todo."). Delete it and end on the clearest concrete sentence already in the draft.

@@ -45,7 +45,7 @@ His time as technical co-founder of Sherpa is one source of cases among several 
   - *"si procesas datos de 10 usuarios distintos a una media de 30 segundos cada uno… saltas el timeout."*
   - *"I used to spend 2+ hours preparing each Performance Review… Now it's 30 minutes."*
   - A per-user monthly price comparison of four password managers.
-- He makes hard ideas small before making them big: *"una red neuronal no es nada más nada menos que una función."*
+- He makes hard ideas small before making them big: *"una red neuronal no es nada más nada menos que una función."* Quoted for the move (shrinking the idea), not as a sentence shape to reuse.
 
 ### 2.3 He tells what went wrong, on purpose
 
