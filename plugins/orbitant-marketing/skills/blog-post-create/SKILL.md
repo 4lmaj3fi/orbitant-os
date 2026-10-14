@@ -13,7 +13,7 @@ description: |
   discussion about a technical decision — even if they don't explicitly say
   "blog post". When in doubt, ask if they want this turned into a post.
 license: MIT
-version: "1.6.0"
+version: "1.7.0"
 metadata:
   author: orbitant
   tags: marketing, blog, editorial, seo, content-creation, writing
@@ -335,6 +335,44 @@ Avoid a run of short, simple sentences separated only by full stops when the ide
 
 This doesn't ban short sentences outright — a short sentence used deliberately for emphasis, after a longer one, is fine. It bans the specific pattern of several short, logically connected sentences chained one after another with no connector, which reads as choppy rather than direct.
 
+### One idea per paragraph
+
+Each paragraph carries one idea. When a paragraph moves on to a second idea, start a new paragraph there, and give the new one its own bolded phrase. Keep paragraphs to 1–3 sentences; a fourth sentence is usually the start of the next idea.
+
+**Incorrect** (two ideas in one paragraph):
+> Eso es lo que significa el control de versiones para agentes de IA: poder señalar una versión concreta del conocimiento y afirmar que fue esa la que generó un resultado. Es, sobre todo, una cuestión de a quién le puedes atribuir una decisión cuando algo falla.
+
+**Correct:** split before "Es, sobre todo…", so the definition and the accountability point each get their own paragraph and their own bold.
+
+### Vary how sentences and paragraphs open
+
+Don't open two consecutive sentences, or two consecutive paragraphs, with the same word, verb or structure. Repeated openings read as a template, not as a person writing.
+
+**Incorrect:**
+> Fijar un hash resuelve la integridad de la descarga. Actualizar el cerebro del agente pasa por una pull request revisada.
+
+**Incorrect** (paragraph opening with "Es…" right after one built on "Eso es…"):
+> Eso es lo que separa un registro de auditoría de una convención.
+>
+> Es si, dado un resultado concreto, se puede señalar qué versión lo produjo.
+
+**Correct:**
+> El hash garantiza que la descarga es íntegra, y cada actualización del conocimiento pasa además por una pull request revisada.
+
+### Precise wording
+
+Write the plain, exact version of each sentence. Three patterns to catch:
+
+- **Don't adjectivise a process; describe it.** Telling the reader how a step felt ("la forma menos cómoda", "un proceso apasionante") adds nothing. Say what was done and why.
+  - Incorrect: "Lo comprobamos de la forma menos cómoda posible: migrando el conocimiento vendorizado al paquete real."
+  - Correct: "Para comprobarlo, migramos el conocimiento vendorizado al paquete real, asumiendo el riesgo de que algo cambiara por el camino."
+- **Pick the verb that says exactly what happens.** Check each main verb against what the sentence means.
+  - Incorrect: "Cada formato nuevo significaba escribir código nuevo."
+  - Correct: "Cada formato nuevo implicaba escribir código nuevo."
+- **No convoluted or tautological sentences.** If a sentence needs a second read, or says the same thing twice ("la diferencia entre ambas cosas es la diferencia entre…"), rewrite it with a clear subject and a direct verb.
+  - Incorrect: "Ningún cambio en lo que el agente sabe llega a producción sin que una persona lo revise y sin que un conjunto de casos de prueba lo valide antes."
+  - Correct: "Cualquier cambio en la información que usa el agente debe revisarlo una persona y validarse con pruebas antes de llegar a producción."
+
 ### Mentioning Orbitant
 
 **Avoid the construction "en Orbitant + verb" ("En Orbitant llevamos...", "En Orbitant hemos...", "En Orbitant creemos...") altogether — not just as a paragraph opener.** It reads as corporate throat-clearing wherever it sits in the sentence. Always bound the company mention in a trailing clause instead — "..., como hacemos en Orbitant", "..., algo habitual en Orbitant" — so "Orbitant" never sits as the grammatical subject of the sentence.
@@ -387,7 +425,13 @@ Open with a line that names the pain or problem the post addresses and immediate
   - One bullet point list
   - One numbered list
   - Do NOT use the same combination of elements in every section.
-- **Bold text is mandatory in every paragraph, not just a scannable extra.** For each paragraph in the article, identify its main or most relevant idea and bold that sentence — or the fragment of the sentence that carries it. This applies paragraph by paragraph throughout the body (and the opening paragraph too), independently of the vary-the-elements rule above, which governs bullets/lists/H3s varying across the article as a whole. Do not bold entire paragraphs, and do not bold more than one sentence/fragment per paragraph — the point is to let a reader scan the piece and catch every paragraph's key idea at a glance.
+- **Bold text is mandatory in every paragraph, not just a scannable extra.** For each paragraph in the article, identify its main or most relevant idea and bold **only the words that carry it**: a short phrase, typically 3 to 8 words, never a full sentence. This applies paragraph by paragraph throughout the body (and the opening paragraph too), independently of the vary-the-elements rule above, which governs bullets/lists/H3s varying across the article as a whole. Bold one phrase per paragraph, no more: the point is to let a reader scan the piece and catch every paragraph's key idea at a glance.
+
+  **Incorrect:**
+  > **Es, sobre todo, una cuestión de a quién le puedes atribuir una decisión cuando algo falla.**
+
+  **Correct:**
+  > Es, sobre todo, una cuestión de **a quién le puedes atribuir una decisión** cuando algo falla.
 
 ### 4. Closing
 
@@ -457,6 +501,7 @@ Include 2–3 FAQs at the end only if the topic lends itself to common reader qu
 ### Links
 
 - **Internal links**: Include 1–2 references to other Orbitant blog posts when relevant.
+- **Series chapters link back**: when the post is a chapter of a series (e.g. "Building our Employents", Software Economics), link at least one previous published instalment, on the natural phrase where the series' topic comes up. Ej.: "el conocimiento que usan nuestros employents" → enlace a una entrega anterior de la serie. Verify it in Content Progress like any internal link (below).
 - **External links**: Include 1–2 links to authoritative sources (official documentation, MDN, GitHub repos, research papers, recognised industry references). Never link to competitors.
 - **Spanish version first**: If a linked piece of content has a Spanish version, always link to that version — never the English one, even if it surfaces first in a search.
 - **Verify internal Orbitant links against the authoritative source**: the "Content Progress" Notion database, queried via SQL with `notion-query-data-sources` — not generic `notion-search`, which only surfaces internal project docs and misses published post URLs. **Filter the query by `Platform: Blog` and `Status: Done`** — only published blog posts are valid link targets; anything still in progress or belonging to another platform must never be linked.
@@ -598,7 +643,7 @@ These rules govern any round of edits to an existing draft (corrections, revisio
 
 ## Final Pass: Anti-slop Check
 
-Before delivering the finished draft, re-read it once, end to end, checking it against every rule already collected in this document (the "Words and expressions to avoid" table, em-dash usage, the Spanish-comma-before-y/o/ni anglicism, "No es X, es Y", rhetorical questions anywhere, sentence rhythm, inclusive language, and the AI filler formulas listed under "What to Avoid") **and against the "Anti-slop Reference" below**. Flag and fix anything that matches. Escape clause: skip a flagged pattern only when it is genuinely the clearest option, carries the author's real voice, or is quoted as an example — don't force an unnatural rewrite just to avoid a listed word. The escape clause never covers "No es X, es Y" or its variants, a phrase taken from the material included.
+Before delivering the finished draft, re-read it once, end to end, checking it against every rule already collected in this document (the "Words and expressions to avoid" table, em-dash usage, the Spanish-comma-before-y/o/ni anglicism, "No es X, es Y", rhetorical questions anywhere, sentence rhythm, one idea per paragraph, varied openings, precise wording, bold on words not sentences, inclusive language, and the AI filler formulas listed under "What to Avoid") **and against the "Anti-slop Reference" below**. Flag and fix anything that matches. Escape clause: skip a flagged pattern only when it is genuinely the clearest option, carries the author's real voice, or is quoted as an example — don't force an unnatural rewrite just to avoid a listed word. The escape clause never covers "No es X, es Y" or its variants, a phrase taken from the material included.
 
 ### Anti-slop Reference
 
