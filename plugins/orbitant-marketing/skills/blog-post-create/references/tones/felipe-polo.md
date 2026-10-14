@@ -89,7 +89,7 @@ If any is missing, do not paper over it with generic first-person lines or inven
 
 Automated drafts built from sprint notes, ADRs or Slack threads tend to come out as engineering posts. For Felipe, apply these limits:
 
-1. **Each H2 is built around one business idea.** Its title and its bolded sentence state that business idea. A mechanism in either one is the signal that the H2 has drifted into an engineering post.
+1. **Each H2 is built around one business idea.** Its title and its bolded phrase state that business idea. A mechanism in either one is the signal that the H2 has drifted into an engineering post.
 2. **At most two technical specifics per H2.** Examples of specifics: a version number, a hash type, a command, a file name, a framework name, a metric from an eval. Pick the ones that prove the business point best and drop the rest.
 3. **Every technical specific is translated.** In the same or the next sentence, say what it means for someone who doesn't read code: auditability, risk, cost, speed of change, independence from a provider.
 
