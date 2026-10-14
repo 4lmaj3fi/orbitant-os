@@ -129,7 +129,7 @@ Example questions:
 
 Felipe's profile caps technical specifics. Matteo's problem is the opposite. His raw material is dense with mechanism, and automated drafts either keep all of it (an engineering changelog) or strip it out and keep the slogan (a Felipe post with the wrong signature). Apply these rules:
 
-1. **Each H2 is built around one trade-off or consequence, and the mechanism serves it.** The title and the bolded sentence state the consequence (cost, risk, speed, value, what it enabled). The body can go into how it works.
+1. **Each H2 is built around one trade-off or consequence, and the mechanism serves it.** The title and the bolded phrase state the consequence (cost, risk, speed, value, what it enabled). The body can go into how it works.
 2. **Mechanisms are welcome, but each one must pay rent.** There is no fixed cap. Every technical specific (a version, a framework, a timeout, a pattern, a command) must be followed, in the same or the next sentence, by what it cost, what it risked or what it allowed. A specific with no consequence attached gets cut.
 3. **At least one number per article that the reader can redo.** Time, money, volume, limits, before and after. Matteo's credibility comes from arithmetic, not adjectives.
 4. **At most one code snippet per H2**, and only when it is the clearest proof (like `waitUntil` separating the HTTP response from the processing in the Apogee post). Explain it in one sentence of plain language.
@@ -162,7 +162,7 @@ The "after" examples are written for this profile from Matteo's real material. T
 
 **Matteo:**
 
-> Elegimos Vercel porque nos dejaba desplegar en minutos, y durante seis semanas fue la mejor decisión que podíamos tomar. **La factura llegó con la primera ingesta pesada: si procesas 10 usuarios a 30 segundos cada uno, el timeout de 5 minutos salta da igual lo eficiente que sea tu código.** Mover la ingesta a un servicio de workflows nos costó semanas que no habíamos planificado, y aun así volvería a elegir velocidad en ese momento.
+> Elegimos Vercel porque nos dejaba desplegar en minutos, y durante seis semanas fue la mejor decisión que podíamos tomar. La factura llegó con la primera ingesta pesada: si procesas 10 usuarios a 30 segundos cada uno, **el timeout de 5 minutos salta** da igual lo eficiente que sea tu código. Mover la ingesta a un servicio de workflows nos costó semanas que no habíamos planificado, y aun así volvería a elegir velocidad en ese momento.
 
 **Too Felipe (right idea, wrong signer, no mechanism):**
 
@@ -170,7 +170,7 @@ The "after" examples are written for this profile from Matteo's real material. T
 
 **Matteo:**
 
-> **Si cambiar de proveedor de base de datos te obliga a tocar el código de dominio, la frontera está mal puesta, y esa frontera mal puesta tiene un precio.** Nosotros lo pagamos cuando un cliente nos pidió integrar un segundo ERP: las facturas, las cuentas y las transacciones estaban modeladas a imagen y semejanza del primero. La salida fue definir un puerto por cada cosa que el negocio necesita (guardar, publicar, notificar) y un adaptador por cada proveedor, de modo que el siguiente ERP solo pide un adaptador nuevo.
+> Si cambiar de proveedor de base de datos te obliga a tocar el código de dominio, **la frontera está mal puesta**, y esa frontera mal puesta tiene un precio. Nosotros lo pagamos cuando un cliente nos pidió integrar un segundo ERP: las facturas, las cuentas y las transacciones estaban modeladas a imagen y semejanza del primero. La salida fue definir un puerto por cada cosa que el negocio necesita (guardar, publicar, notificar) y un adaptador por cada proveedor, de modo que el siguiente ERP solo pide un adaptador nuevo.
 
 **Too LinkedIn (his own social habits, banned on the blog):**
 
@@ -178,7 +178,7 @@ The "after" examples are written for this profile from Matteo's real material. T
 
 **Matteo on the blog:**
 
-> **Trabajar con IA desde el principio cambia el orden de las tareas, y ese orden es lo que evita el código de usar y tirar.** Antes de escribir una línea, grabé mis dudas sobre el brief y le pedí a un modelo que las convirtiera en riesgos, preguntas abiertas y una definición acotada de MVP. El prototipo que salió después seguía teniendo pinta de demo de dos ficheros. Lo que cambió el resultado fue convertir una formación interna sobre arquitectura limpia en reglas que el agente carga siempre.
+> Trabajar con IA desde el principio **cambia el orden de las tareas**, y ese orden es lo que evita el código de usar y tirar. Antes de escribir una línea, grabé mis dudas sobre el brief y le pedí a un modelo que las convirtiera en riesgos, preguntas abiertas y una definición acotada de MVP. El prototipo que salió después seguía teniendo pinta de demo de dos ficheros. Lo que cambió el resultado fue convertir una formación interna sobre arquitectura limpia en reglas que el agente carga siempre.
 
 ---
 
