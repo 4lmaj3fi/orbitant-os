@@ -162,7 +162,7 @@ The "after" examples are written for this profile from Matteo's real material. T
 
 **Matteo:**
 
-> Elegimos Vercel porque nos dejaba desplegar en minutos, y durante seis semanas fue la mejor decisión que podíamos tomar. **La factura llegó con la primera ingesta pesada: si procesas 10 usuarios a 30 segundos cada uno, el timeout de 5 minutos salta da igual lo eficiente que sea tu código.** Mover la ingesta a un servicio de workflows nos costó semanas que no habíamos planificado, y aun así volvería a elegir velocidad en ese momento.
+> Elegimos Vercel porque nos dejaba desplegar en minutos, y durante seis semanas fue la mejor decisión que podíamos tomar. La factura llegó con la primera ingesta pesada: si procesas 10 usuarios a 30 segundos cada uno, **el timeout de 5 minutos salta** da igual lo eficiente que sea tu código. Mover la ingesta a un servicio de workflows nos costó semanas que no habíamos planificado, y aun así volvería a elegir velocidad en ese momento.
 
 **Too Felipe (right idea, wrong signer, no mechanism):**
 
@@ -170,7 +170,7 @@ The "after" examples are written for this profile from Matteo's real material. T
 
 **Matteo:**
 
-> **Si cambiar de proveedor de base de datos te obliga a tocar el código de dominio, la frontera está mal puesta, y esa frontera mal puesta tiene un precio.** Nosotros lo pagamos cuando un cliente nos pidió integrar un segundo ERP: las facturas, las cuentas y las transacciones estaban modeladas a imagen y semejanza del primero. La salida fue definir un puerto por cada cosa que el negocio necesita (guardar, publicar, notificar) y un adaptador por cada proveedor, de modo que el siguiente ERP solo pide un adaptador nuevo.
+> Si cambiar de proveedor de base de datos te obliga a tocar el código de dominio, **la frontera está mal puesta**, y esa frontera mal puesta tiene un precio. Nosotros lo pagamos cuando un cliente nos pidió integrar un segundo ERP: las facturas, las cuentas y las transacciones estaban modeladas a imagen y semejanza del primero. La salida fue definir un puerto por cada cosa que el negocio necesita (guardar, publicar, notificar) y un adaptador por cada proveedor, de modo que el siguiente ERP solo pide un adaptador nuevo.
 
 **Too LinkedIn (his own social habits, banned on the blog):**
 
@@ -178,7 +178,7 @@ The "after" examples are written for this profile from Matteo's real material. T
 
 **Matteo on the blog:**
 
-> **Trabajar con IA desde el principio cambia el orden de las tareas, y ese orden es lo que evita el código de usar y tirar.** Antes de escribir una línea, grabé mis dudas sobre el brief y le pedí a un modelo que las convirtiera en riesgos, preguntas abiertas y una definición acotada de MVP. El prototipo que salió después seguía teniendo pinta de demo de dos ficheros. Lo que cambió el resultado fue convertir una formación interna sobre arquitectura limpia en reglas que el agente carga siempre.
+> Trabajar con IA desde el principio **cambia el orden de las tareas**, y ese orden es lo que evita el código de usar y tirar. Antes de escribir una línea, grabé mis dudas sobre el brief y le pedí a un modelo que las convirtiera en riesgos, preguntas abiertas y una definición acotada de MVP. El prototipo que salió después seguía teniendo pinta de demo de dos ficheros. Lo que cambió el resultado fue convertir una formación interna sobre arquitectura limpia en reglas que el agente carga siempre.
 
 ---
 
