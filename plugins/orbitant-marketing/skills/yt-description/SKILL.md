@@ -35,13 +35,13 @@ Read the transcript in full before writing anything. Do not invent content not p
 
 ## Step 0 — What you need to write well
 
-This skill only writes. It does not fetch anything: whoever runs it gathers the material beforehand. Work with what you are given and never stop to ask for missing material; write the best output possible and flag the gaps in the notes after it.
+Work with the material you are given. Never stop to ask for something missing: write the best output possible with what you have and flag the gaps in the notes after it.
 
 **Required:**
 - The session transcript (.vtt or plain text).
-- The speaker's full name, or names if there are several. Use them exactly as given; they are the reference to correct the transcript. If no name is given, do not invent one: write the title without `— [Speaker]`, use a neutral phrase in the 🎙️ line (`🎙️ La persona que da la charla…` / `🎙️ The speaker…`) and flag that the name is missing.
 
 **Optional (use them if you have them; if not, write anyway):**
+- The speaker's full name, or names if there are several. Use them exactly as given; they are the reference to correct the transcript. Without a name, see "Speaker not named in the input" in Step 4.
 - The speaker's job title and company. If not given, use the name only.
 - The last 5–10 published YouTube titles and descriptions: do not repeat their title formula or hook type (see Steps 2 and 4).
 - The thumbnail title, the session title or description from the planner, the Slack thread about the session: they usually have names of people, companies and tools spelled correctly.
@@ -161,6 +161,8 @@ One sentence with 🎙️. Say **what the speaker did or built and what it achie
 > ❌ `🎙️ Kevin Martínez, Software Architect en Orbitant, comparte su experiencia sobre IA y deuda técnica.`
 
 Multiple speakers (up to 3): one line each; mention the company once if shared. More than 3: name the two or three most prominent and add "junto a [N] ponentes más" / "and [N] more speakers" (never the generic masculine "expertos"). Use the job title and company given in the material; if none is given, use the name only. No superlatives.
+
+**Speaker not named in the input:** do not invent a name, a title or a company. Write the title without `— [Speaker]`, and write the 🎙️ line in the third person with a neutral phrase ("la persona que da la charla", "the speaker"): `🎙️ La persona que da la charla comparte […]`. Use that same phrase wherever the description refers to them, so a name can replace it later. Never write their talk as Orbitant's ("os contamos", "we share"). Flag in the notes that the name is missing.
 
 ### 3. Overview (optional)
 
