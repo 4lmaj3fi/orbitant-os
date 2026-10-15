@@ -90,7 +90,7 @@ YouTube titles do **not** follow the blog's SEO title rules (exact keyword first
   - ❌ `Diseño visual previo a implementación con IA`
   - ✅ `Diseño de UI con Claude Code antes de programar`
 - **Primary keyword within the first ~40 characters.**
-- **Count the full title, speaker name included.** The speaker name is mandatory and always part of the title, so it eats into the length budget: choose a shorter session title when the speaker's name is long. Keep the full title (session title, separator and speaker name) within **~70 characters**, which is roughly what YouTube shows in search results before truncating; the hard limit is 100. Because the end may still be cut on some screens, the keyword must sit in the session title, never after it.
+- **Count the full title, speaker name included.** When you have the speaker name, it is part of the title, so it eats into the length budget: choose a shorter session title when the speaker's name is long. Keep the full title (session title, separator and speaker name) within **~70 characters**, which is roughly what YouTube shows in search results before truncating; the hard limit is 100. Because the end may still be cut on some screens, the keyword must sit in the session title, never after it.
   - `Diseña la UI antes de programarla, sin salir de Claude Code — David Rueda` (73 characters: too long, shorten the session title)
   - `Diseña la UI con Claude Code antes de programar — David Rueda` (61 characters)
 - **Reads naturally out loud.** If it sounds like a report heading, rewrite it.
@@ -256,7 +256,7 @@ Orbitant's voice is defined in the `tone` skill. Everything else this skill need
 - **No comma before "y" / "o" / "ni"** in a simple enumeration (`contexto, latencia y coste`).
 - **No shallow-analysis or posteriority gerunds** (`…, demostrando el compromiso con…`, `Lanzaron X, mejorando Y`).
 - **Orbitant as context, never as subject.** Never use "En Orbitant + verb" constructions.
-- **Em dash (—):** forbidden as punctuation anywhere in the description, in both languages and in any form (single- or two-sided). Use a colon, comma, parentheses or full stop instead. It is allowed only as a fixed format element: the separator between title and speaker in titles (`[Title] — [Speaker]`) and the takeaway bullet marker.
+- **Em dash (—):** forbidden as punctuation anywhere in the description, in both languages and in any form (single- or two-sided). Use a colon, comma, parentheses or full stop instead. It is allowed only as a fixed format element: the separator between title and speaker in titles (`[Title] — [Speaker]`) and the takeaway bullet marker. This is stricter than the em-dash note in `tone` and overrides it for YouTube copy.
 - **English technical terms** with no consolidated Spanish equivalent (pull request, workflow, prompt, framework) stay in English. YouTube has no italics, so write them in plain text.
 - **No filler:** "una sesión muy interesante", "a fascinating discussion", "todo lo que necesitas saber sobre", "Here is everything you need to know".
 - **Plain text only.** YouTube does not render markdown: no `**bold**`, no `##`, no `-` bullets.
