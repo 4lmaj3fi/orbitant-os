@@ -33,22 +33,30 @@ Read the transcript in full before writing anything. Do not invent content not p
 
 ---
 
-## Step 0 — Gather context before writing
+## Step 0 — What you need to write well
 
-1. **Check Content Progress in Notion** (data source `collection://264b9bf7-ac03-81c3-83ce-000ba92ebd49`). Look at the last 5–10 published YouTube entries (Platform = YouTube) to:
-   - See the current format and tone of published descriptions.
-   - Collect the title formulas used recently (see Step 2) so you don't repeat them.
-   - Reuse fixed links (newsletter, repos) instead of leaving placeholders.
-   If Notion is not available, say so and ask the user — never leave a placeholder for information that exists in Content Progress.
+This skill only writes. It does not fetch anything: whoever runs it gathers the material beforehand. Work with what you are given and never stop to ask for missing material; write the best output possible and flag the gaps in the notes after it.
 
-2. **Fix transcription errors.** Zoom transcripts regularly mangle names of people, the company and tools. Cross-check against the thumbnail, the speaker's Zoom username, Content Progress and a web search. Examples seen:
-   - "Keith Martínez" → Kevin Martínez (Zoom user `kevinccbsg`)
+**Required:**
+- The session transcript (.vtt or plain text).
+- The speaker's full name, or names if there are several. Use them exactly as given; they are the reference to correct the transcript. If no name is given, do not invent one: write the title without `— [Speaker]`, use a neutral phrase in the 🎙️ line (`🎙️ La persona que da la charla…` / `🎙️ The speaker…`) and flag that the name is missing.
+
+**Optional (use them if you have them; if not, write anyway):**
+- The speaker's job title and company. If not given, use the name only.
+- The last 5–10 published YouTube titles and descriptions: do not repeat their title formula or hook type (see Steps 2 and 4).
+- The thumbnail title, the session title or description from the planner, the Slack thread about the session: they usually have names of people, companies and tools spelled correctly.
+- Verified URLs for the tools mentioned (see Step 5).
+
+1. **Fix transcription errors.** Zoom transcripts regularly mangle names of people, the company and tools. Correct them with the material you were given and this list of errors already seen:
+   - "Keith Martínez" → Kevin Martínez
    - "órbita", "órbitan" → Orbitant
    - "T, www, E, F", "testing Df" → TWD
    - "Twee" → tester-army/e2e
-   If you are not sure about a correction, flag it to the user in one line after the output.
+   - "Cloud" (when the speaker means the AI) → Claude
+   - "Mad Pocock" → Matt Pocock
+   When a name looks wrong and you cannot confirm it with the material, do not guess: write the most likely form followed by a question mark in parentheses (`Laia (¿Laya?)`) and flag it in the notes.
 
-3. **Distinguish methodologies from tools.** A methodology (TDD, red-green-refactor) is not a tool (TWD). Never merge them, never describe one as the other, and never list the same tool twice under different descriptions.
+2. **Distinguish methodologies from tools.** A methodology (TDD, red-green-refactor) is not a tool (TWD). Never merge them, never describe one as the other, and never list the same tool twice under different descriptions.
 
 ---
 
@@ -88,12 +96,12 @@ YouTube titles do **not** follow the blog's SEO title rules (exact keyword first
 - **Reads naturally out loud.** If it sounds like a report heading, rewrite it.
 - **No descriptive situation titles** (`Cuando le describes la UI a Claude y nadie sabe cómo va a quedar`): they read empty and run past the character limit. The problem belongs in the description's hook, not in the title.
 - **Spanish titles in sentence case** (`Diseña la UI antes de programarla`, not `Diseña La UI Antes De Programarla`).
-- **The thumbnail title is an angle, not the YouTube title.** It can inspire the title but it is designed for the image, not for search (e.g. thumbnail `Design mixed with implementation` is not searchable).
+- **If you have the thumbnail title, treat it as an angle, not the YouTube title.** It can inspire the title but it is designed for the image, not for search (e.g. thumbnail `Design mixed with implementation` is not searchable).
 
 ### Format
 
-- **Never use emojis in YouTube titles.** The emojis seen in Content Progress headlines (☄️, ⏯️) are internal labels only and never go on the channel.
-- **Asteroid and KS:** `[Title] — [Speaker full name]`. The speaker name is always included, in both formats. With several speakers, list the names separated by " y " (`… — Kevin Martínez y David Rueda`); if they don't fit within the length budget, keep the main speaker only and flag it.
+- **Never use emojis in YouTube titles.** The emojis used in internal planning headlines (☄️, ⏯️) are labels only and never go on the channel.
+- **Asteroid and KS:** `[Title] — [Speaker full name]`. The speaker name is always included when you have it, in both formats. With several speakers, list the names separated by " y " (`… — Kevin Martínez y David Rueda`); if they don't fit within the length budget, keep the main speaker only and flag it.
 
 ### Formula bank — rotate them
 
@@ -105,7 +113,7 @@ YouTube titles do **not** follow the blog's SEO title rules (exact keyword first
 | From A to B | `Del prompt a la pantalla: diseña la UI con Claude Code` |
 | How + verb | `Cómo evitar que la IA amplifique la deuda técnica en software` |
 
-**Do not use the formula of any of the 2–3 most recent YouTube titles in Content Progress.** "Cómo…" in particular must not become the default.
+**If you have the most recent published titles, do not use the formula of any of the last 2–3.** "Cómo…" in particular must not become the default.
 
 ---
 
@@ -135,7 +143,7 @@ The opening is a **paragraph**, not a single sentence. It can run 2–3 sentence
 - Staccato chains of short sentences separated by full stops (`Creas un worktree. Lanzas la app. Falla.`): join related ideas with a connector instead. Addressing the viewer as "tú" is fine (`Puedes tener dashboards para casi todo y aun así no enterarte de que algo se ha roto.`)
 - Generic consultant phrases (`En el mundo actual…`, `Es crucial…`)
 
-**Vary the hook.** Do not open every description with "Aprende a…" / "Learn how to…". Rotate among these hook types, choosing the one that fits the session, and avoid the type used in the last 2–3 published descriptions:
+**Vary the hook.** Do not open every description with "Aprende a…" / "Learn how to…". Rotate among these hook types, choosing the one that fits the session, and, if you have the recent published descriptions, avoid the type used in the last 2–3:
 
 | Hook type | Example (first ~150 characters) |
 |---|---|
@@ -152,7 +160,7 @@ One sentence with 🎙️. Say **what the speaker did or built and what it achie
 > ✅ `🎙️ Kevin Martínez, Software Architect en Orbitant, explica cómo estructuró el trabajo de su equipo para integrar agentes de IA en el desarrollo de software, manteniendo el control del código, de los estándares técnicos y de la calidad del resultado.`
 > ❌ `🎙️ Kevin Martínez, Software Architect en Orbitant, comparte su experiencia sobre IA y deuda técnica.`
 
-Multiple speakers (up to 3): one line each; mention the company once if shared. More than 3: name the two or three most prominent and add "junto a [N] ponentes más" / "and [N] more speakers" (never the generic masculine "expertos"). Use the job title from the thumbnail or Content Progress. No superlatives.
+Multiple speakers (up to 3): one line each; mention the company once if shared. More than 3: name the two or three most prominent and add "junto a [N] ponentes más" / "and [N] more speakers" (never the generic masculine "expertos"). Use the job title and company given in the material; if none is given, use the name only. No superlatives.
 
 ### 3. Overview (optional)
 
@@ -194,14 +202,14 @@ Open with: `🔗 Resources mentioned during the session:`
 
 **What qualifies:**
 - Specific repos, libraries or tools the viewer probably doesn't know and would want to try — including those mentioned by attendees in the Q&A.
-- Each with its **real URL**, found via web search. Never leave a placeholder if the URL can be found.
+- A URL only if it was given to you or verified. Never write a URL from memory: it may not exist. If you have no verified URL, write the name followed by `(enlace por confirmar)` and flag it in the notes; whoever publishes the video fills it in.
 
 **What does not qualify:**
 - Widely known products (Claude Design, Claude Code, Figma, Cypress…).
 - Generic standards or concepts (OpenAPI, TDD).
 - The newsletter (it is the CTA, not a resource).
 
-Format: `[Name], [short description]: [URL]` — multiple URLs joined with `&`.
+Format: `[Name], [short description]: [URL]` — multiple URLs joined with `&`. Without a verified URL: `[Name], [short description] (enlace por confirmar)`.
 
 > `TWD, a front-end testing tool that runs tests directly in the application's browser: https://twd.dev/ & https://github.com/BRIKEV/twd`
 > `tester-army/e2e, a library for generating AI-powered test scenarios based on use cases: https://github.com/tester-army/e2e`
@@ -223,9 +231,9 @@ Format: `[Name], [short description]: [URL]` — multiple URLs joined with `&`.
 
 ## Writing rules (both languages)
 
-Orbitant's voice is defined in the sibling `tone` skill (`../tone/SKILL.md`), and the anti-slop rules in `../blog-post-create/SKILL.md` ("Words and expressions to avoid" and "Anti-slop Reference"). Their style and anti-slop rules apply to YouTube copy too. The rules below are the ones that matter most in short copy.
+Orbitant's voice is defined in the `tone` skill. Everything else this skill needs to avoid AI-sounding copy is written below, so it does not depend on any other skill.
 
-**What does not carry over from the blog:** brand personality and narrative. YouTube descriptions are short and exist to position the video, so they go straight to the point: concise, concrete, keyword-driven. Do not use the Orbit Language (orbit, gravity, thrust, escape velocity…) from `orbitant-activation-framework.md`, and always prefer the term people search for ("deuda técnica", not "gravity"). Orbitant appears only in the speaker intro and the newsletter CTA.
+**What does not carry over from the blog:** brand personality and narrative. YouTube descriptions are short and exist to position the video, so they go straight to the point: concise, concrete, keyword-driven. Do not use Orbitant's Orbit Language (orbit, gravity, thrust, escape velocity…), and always prefer the term people search for ("deuda técnica", not "gravity"). Orbitant appears only in the speaker intro and the newsletter CTA.
 
 - **Write the Spanish natively, never as a mental translation from English.** The most frequent failure is a sentence that is grammatical but that no Spanish speaker would write: English calques and word-for-word structures. Also do not copy the speaker's spoken phrasing literally from the transcript; oral Spanish ("mover la decisión cuando todavía es barata") reads wrong in writing. Rewrite the idea the way a Spanish editor would.
   - ❌ `En lugar de describir el diseño en texto turno tras turno, lo ves y lo decides cuando cambiarlo todavía es barato.` ("turn after turn" and "while it's still cheap" calqued; "lo decides" has no clear referent)
@@ -240,6 +248,7 @@ Orbitant's voice is defined in the sibling `tone` skill (`../tone/SKILL.md`), an
   - Spanish: honesto/a, con honestidad, incómodo/a ("la pregunta incómoda"), sostener ("sostener un sistema", "lo que sostiene…"), provocador/a, profundizar, adentrarse, fomentar, apalancar, empoderar, aprovechar el poder de, desbloquear (el potencial), elevar, supercargar, robusto, de vanguardia, puntero, revolucionario, disruptivo, transformador, cambio de paradigma, un antes y un después, esto lo cambia todo, sinergia, holístico, sin fisuras, multifacético, meticuloso, intrincado, primordial, tapiz, entramado, faro, abanico de posibilidades, en constante evolución, emprender un viaje.
   - English: honest/honestly, uncomfortable, delve, leverage, harness, empower, unlock, elevate, supercharge, robust, seamless, cutting-edge, game-changing, revolutionary, transformative, paradigm shift, synergy, holistic, tapestry, landscape, navigate (figurative), journey (figurative).
 - **Empty words (cut unless they carry real meaning):** realmente, básicamente, simplemente, literalmente, sinceramente, prácticamente, claramente, obviamente, de alguna manera, por así decirlo, clave, esencial, potenciar, impulsar, ecosistema, escalable, solución (as a euphemism for "product"), utilizar (use "usar"). English: really, basically, simply, literally, truly, key, essential.
+- **AI-sounding structures:** false reveals ("Lo que nadie te cuenta"), dramatic colons ("La clave: X"), importance inflation ("marca un antes y un después", "juega un papel fundamental"), foundation metaphors ("pilar fundamental", "piedra angular"), consecration verbs ("se erige como", "ha llegado para quedarse"), pseudo-profound closing lines, synonym cycling (repeat the clear word instead of rotating "el agente / el asistente / la herramienta"), invented figures or vague attributions ("la mayoría de los equipos").
 - **Concrete over abstract.** Name the tool, the technique, the decision or the result from the session. No hollow adjective pairs ("simple y potente").
 - **Inclusive language:** avoid the generic masculine plural when a collective noun works ("el equipo", "quienes…", "las personas que…").
 - **No comma before "y" / "o" / "ni"** in a simple enumeration (`contexto, latencia y coste`).
@@ -256,15 +265,15 @@ Re-read the full output once and check:
 
 - [ ] Every Spanish sentence reads as written by a native editor: no calques, no literal transcript phrasing, no pronoun without a clear referent
 - [ ] The first ~150 characters of each version contain the hook and the primary keyword
-- [ ] The hook type differs from the last 2–3 published descriptions
+- [ ] If you had the recent published descriptions, the hook type and title formula differ from the last 2–3
 - [ ] No rhetorical question, no "No es X, es Y", no staccato chain of short sentences
 - [ ] No block repeats an idea from another block; no two takeaways say the same thing
 - [ ] Every takeaway is ~12 words or fewer
 - [ ] No word from the anti-slop lists, no comma before "y" in enumerations, no em dash used as punctuation in the description
 - [ ] Spanish acronyms expanded on first mention
-- [ ] Names of people, company and tools corrected against the transcript errors
+- [ ] Names of people, company and tools corrected; unconfirmed ones marked `(¿…?)` and flagged
 - [ ] Each newsletter CTA links to its own language page
-- [ ] Resources: only lesser-known tools, each with a real URL
+- [ ] Resources: only lesser-known tools; URLs only if verified, otherwise `(enlace por confirmar)`
 - [ ] Hashtags: the 3 most relevant first, no #Orbitant, bilingual where the term differs
 - [ ] Takeaways don't start with the same word
 
@@ -272,7 +281,7 @@ Re-read the full output once and check:
 
 ## Output format
 
-Deliver in the chat, ready to paste:
+Deliver as plain text, ready to paste into YouTube:
 
 ```
 Título:
@@ -314,18 +323,18 @@ Título:
 #MostRelevant1 #MostRelevant2 #MostRelevant3 #tag #tag ...
 ```
 
-After the output, add at most a few one-line notes for anything the user must verify (uncertain name corrections, URLs you could not confirm). Do not explain your internal reasoning or decisions the user didn't ask about.
+After the output, add at most a few one-line notes for anything that must be verified: a missing speaker name, uncertain name corrections, URLs marked `(enlace por confirmar)`. Do not explain your internal reasoning or decisions the user didn't ask about.
 
 ---
 
 ## What to avoid
 
 - Opening every description with "Aprende a…" / "Learn how to…", or every title with "Cómo…".
-- Rhetorical questions, "no es X, es Y" contrasts or dramatised second-person scenes in hooks and titles.
+- Rhetorical questions, "no es X, es Y" contrasts or staccato chains of short sentences in hooks and titles.
 - A hook paragraph whose first ~150 characters miss the hook or the primary keyword.
 - Formal or uncommon vocabulary in titles and keywords.
 - Paragraphs or bullets that restate each other.
-- Placeholders for links that exist in Content Progress or on the web.
+- URLs written from memory or never verified.
 - Listing widely known products or generic standards as resources.
 - Confusing a methodology with a tool, or keeping transcription errors in names.
 - Spanish newsletter URL in the English version.
