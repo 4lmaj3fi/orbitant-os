@@ -78,7 +78,7 @@ Each scored factor ends in one of three states:
 
 ## Scoring
 
-Rate only when all five scored factors are observed (Passing or Failing):
+Rate from the table when all five scored factors are observed (Passing or Failing):
 
 | Factors passing | Rating |
 |---|---|
@@ -89,6 +89,10 @@ Rate only when all five scored factors are observed (Passing or Failing):
 
 When any scored factor is Not observed, the rating is **❔ Incomplete (n/5 observed)**.
 A missing piece of evidence is not a failure: the rating waits for it.
+
+The exception is three or more factors Failing. The rating is then ❌ Not 12-factor
+compliant whatever is Not observed, because the missing evidence could not lift it above
+two passing. The report still names the evidence that is missing.
 
 ---
 

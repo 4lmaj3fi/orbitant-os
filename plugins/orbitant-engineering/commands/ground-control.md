@@ -156,7 +156,7 @@ Key checks (summary):
 
 Note which factors were skipped (I, IV, VI, VII, VIII, IX, XII) and why.
 
-Assign a rating: ❌ Not compliant / ⚠️ Partial / ✅ Good / 🚀 Fully observable compliance
+Assign a rating: ❌ Not compliant / ⚠️ Partial / ✅ Good / 🚀 Fully observable compliance / ❔ Incomplete (n/5 observed)
 
 ---
 
@@ -222,6 +222,10 @@ If none, write "No critical findings."}
 
 ### Failing
 - ...
+
+### Not observed (leave out when every scored factor was observed)
+- {factor}
+  Missing: {evidence that would complete it}
 
 ### Not checked (requires runtime)
 - Factors I, IV, VI, VII, VIII, IX, XII — see the `orbitant-12-factor` skill for details

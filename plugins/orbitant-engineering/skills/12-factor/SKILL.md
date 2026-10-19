@@ -37,7 +37,7 @@ The audit is defined by the evidence it needs, not by how that evidence is obtai
 1. Read `references/12-factor.md`, in this skill's folder. It defines, for each scored factor, the evidence to look at, what compliance looks like, the fail signals and what to exclude.
 2. Identify the stack from the dependency manifests present. It decides which file names and code patterns apply.
 3. For each of the five scored factors, gather its evidence and judge it **Passing**, **Failing** or **Not observed**, as the reference defines them. Every scored factor ends in one of the three.
-4. Rate the repository with the reference's scoring. With any factor Not observed, the rating is Incomplete, and the report names the evidence that would complete it.
+4. Rate the repository with the reference's scoring. With any factor Not observed, the rating is Incomplete, unless three or more factors are Failing, which settles it as ❌. Either way, the report names the evidence that would complete it.
 
 ---
 
@@ -48,7 +48,8 @@ The audit is defined by the evidence it needs, not by how that evidence is obtai
 
 ### Passing
 - II. Dependencies: lockfile present (package-lock.json), versions pinned
-- V. Build/release/run: CI pipeline defined (.github/workflows/)
+- X. Dev/prod parity: Dockerfile present, NODE_ENV checks select configuration only
+- XI. Logs: pino in package.json, no log file writes in source
 
 ### Failing
 - III. Config: hardcoded URLs found in source
@@ -56,8 +57,8 @@ The audit is defined by the evidence it needs, not by how that evidence is obtai
   Recommendation: move to process.env.API_URL, add to .env.example
 
 ### Not observed
-- XI. Logs
-  Missing: the non-test source and the dependency manifest
+- V. Build/release/run
+  Missing: the contents of the CI configuration (.github/workflows/) and the Dockerfile
 
 ### Not checked (requires runtime)
 - Factors I, IV, VI, VII, VIII, IX, XII
